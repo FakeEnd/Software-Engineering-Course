@@ -1,0 +1,15 @@
+name: napari-svs-lazy-hed
+display_name: napari_svs_lazy_hed
+# use 'hidden' to remove plugin from napari hub search results
+visibility: public
+# see https://napari.org/stable/plugins/manifest.html for valid categories
+categories: ["Annotation", "Segmentation", "Acquisition"]
+contributions:
+  commands:
+    - id: napari-svs-lazy-hed.get_reader
+      python_name: napari_svs_lazy_hed._reader:napari_get_reader
+      title: Open data with napari_svs_lazy_hed
+  readers:
+    - command: napari-svs-lazy-hed.get_reader
+      accepts_directories: false
+      filename_patterns: ['*.svs']
