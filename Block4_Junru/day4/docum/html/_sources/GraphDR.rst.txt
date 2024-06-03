@@ -1,0 +1,41 @@
+GraphDR Dimensionality Reduction
+================================
+
+The second project implements GraphDR for dimensionality reduction and visualization of high-dimensional data. It also includes a PCA function for preliminary dimensionality reduction to enhance the performance of GraphDR.
+
+Prerequisites
+-------------
+
+- Python 3.x
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- scikit-learn
+- scipy
+- argparse
+
+You can install the required libraries using pip:
+
+.. code-block:: bash
+
+   pip install pandas numpy matplotlib seaborn scikit-learn scipy argparse
+
+Usage
+-----
+
+To run the GraphDR algorithm on your dataset, use the following command:
+
+.. code-block:: bash
+
+   python graphdr.py --data_path <path_to_data_file> --anno_path <path_to_annotation_file> --output_dir <path_to_output_directory> --n_neighbors <number_of_neighbors> --n_components <number_of_components> --l <regularization_parameter> --no_rotation
+
+Parameters
+----------
+
+- **--data_path**: Path to the data file (e.g., data.tsv).
+- **--anno_path**: Path to the annotation file (e.g., annotation.tsv).
+- **--output_dir**: Directory to save the output plots.
+- **--n_neighbors**: Number of neighbors for graph construction (default is 10).
+- **--n_components**: Number of components for GraphDR (default is 2).
+- **--l**: Regularization parameter (default is 10).

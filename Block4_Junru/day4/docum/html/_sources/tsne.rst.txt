@@ -1,0 +1,30 @@
+t-SNE Dimensionality Reduction
+==============================
+
+The first project implements t-SNE for dimensionality reduction and visualization of high-dimensional data. It also includes a PCA function for preliminary dimensionality reduction to enhance the performance of t-SNE.
+
+Prerequisites
+-------------
+
+- Python 3.x
+- numpy
+- matplotlib
+- argparse
+
+Usage
+-----
+
+To run the t-SNE algorithm on your dataset, use the following command:
+
+.. code-block:: bash
+
+   python tsne.py --input_data <path_to_input_data> --input_labels <path_to_input_labels> --output_image <path_to_output_image> --no_dims <number_of_dimensions> --perplexity <perplexity_value>
+
+Parameters
+----------
+
+- **--input_data**: Path to the input data file (e.g., mnist2500_X.txt).
+- **--input_labels**: Path to the input labels file (e.g., mnist2500_labels.txt).
+- **--output_image**: Path to save the output image (default is mnist_tsne.png).
+- **--no_dims**: Number of dimensions for t-SNE (default is 2).
+- **--perplexity**: Perplexity parameter for t-SNE (default is 30.0).

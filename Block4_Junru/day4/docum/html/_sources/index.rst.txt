@@ -1,0 +1,19 @@
+.. tsne_graphdr documentation master file, created by
+   sphinx-quickstart on Thu May 30 2024.
+
+Welcome to the tsne_graphdr documentation!
+==========================================
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+   tsne
+   GraphDR
+
+Indices and tables
+===================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`

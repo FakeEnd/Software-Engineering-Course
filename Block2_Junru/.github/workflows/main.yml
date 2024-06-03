@@ -1,0 +1,16 @@
+name: Testcode
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: xxx-name
+        # You may pin to the exact commit or the version.
+        # uses: matlab-actions/setup-matlab@1cd3c559a06a6bed4f48269e8642e6ea6f8b7a0a
+      - uses: matlab-actions/setup-matlab@v2.2.0
+  
+      # uses: Codes-Exe/run-command@a539d32c9d3020257dbe845c37aa0f80eb643613
+      - uses: Codes-Exe/run-command@v1.0.3
+        with:
+          # Script, function, or statement to execute
+          command: test.m
