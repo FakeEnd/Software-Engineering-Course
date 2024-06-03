@@ -1,0 +1,15 @@
+name: napari-svs-lazy-read
+display_name: napari-svs-lazy-read
+# use 'hidden' to remove plugin from napari hub search results
+visibility: public
+# see https://napari.org/stable/plugins/manifest.html for valid categories
+categories: ["Annotation", "Segmentation", "Acquisition"]
+contributions:
+  commands:
+    - id: napari-svs-lazy-read.get_reader
+      python_name: napari_svs_lazy_read._reader:napari_get_reader
+      title: Open data with FooBar Segmentation
+  readers:
+    - command: napari-svs-lazy-read.get_reader
+      accepts_directories: false
+      filename_patterns: ['*.svs']
